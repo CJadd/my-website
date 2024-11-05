@@ -1,0 +1,154 @@
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salem GIS Data Portal</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        /* General body styling */
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            background-color: #DAD7CD;
+            color: #344E41;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #A3B18A;
+            text-align: center;
+            padding: 1rem;
+            font-family: 'Lobster', cursive;
+            color: #344E41;
+            font-size: 2.5rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Main container styling */
+        .container {
+            display: flex;
+            flex: 1;
+            padding: 1rem;
+            gap: 1rem;
+        }
+
+        /* Sidebar styling */
+        .sidebar {
+            width: 250px;
+            background-color: #A3B18A;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Sidebar heading */
+        .sidebar h2 {
+            margin: 0 0 1rem 0;
+            font-size: 1.5rem;
+            color: #344E41;
+        }
+
+        /* Sidebar buttons */
+        .sidebar button {
+            background-color: #A3B18A;
+            color: #344E41;
+            border: none;
+            padding: 0.5rem;
+            font-size: 1rem;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            cursor: pointer;
+            font-family: Georgia, serif;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Button hover effect */
+        .sidebar button:hover {
+            background-color: #344E41;
+            color: #DAD7CD;
+        }
+
+        /* Main content area styling */
+        .main-content {
+            flex: 1;
+            background-color: #EDEDED;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Dataset list styling */
+        .dataset-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Dataset item styling */
+        .dataset-item {
+            background-color: #DAD7CD;
+            border: 1px solid #A3B18A;
+            border-radius: 8px;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Dataset item hover effect */
+        .dataset-item:hover {
+            background-color: #A3B18A;
+            color: #344E41;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: #344E41;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with title -->
+    <header>
+        <h1>Wu Gis Data Page</h1>
+    </header>
+
+    <!-- Container for Sidebar and Main Content -->
+    <div class="container">
+        <!-- Sidebar for Layers/Options -->
+        <div class="sidebar"> 
+        <h2 class="centered-title">Datasets by theme</h2>
+            <button>Buildings/Boundaries</button>
+            <button>Native Species</button>
+            <button>Trees</button>
+            <button>MillStream</button>
+        </div>
+
+        <!-- Main content area -->
+        <div class="main-content">
+            <h2>Downloadable Datasets</h2>
+            <ul class="dataset-list">
+                <li class="dataset-item"><a href="#">Dataset 1:Layout and Boundaries Of the Martha Springer Garden</a></li>
+                <li class="dataset-item"><a href="#">Dataset 2: Native Plant Species</a></li>
+                <li class="dataset-item"><a href="#">Dataset 3: Tree Distributions </a></li>
+                <li class="dataset-item"><a href="#">Dataset 4: Willamette Campus Data</a></li>
+            </ul>
+        </div>
+    </div>
+</html>
+
+</body>
+</html>
